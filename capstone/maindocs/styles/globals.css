@@ -1,0 +1,97 @@
+/* styles/globals.css */
+
+/* Reset default browser styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black; /* Set background color to black */
+  color: white; /* Set default text color to white */
+}
+
+/* Global styles */
+.container {
+  display: flex;
+}
+
+.navbar {
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top of the viewport */
+  right: 0;
+  background-color: black; /* Set Navbar background color to grey */
+  color: white;
+  width: 82vw; /* Navbar spans entire viewport width */
+  height: 70px; /* Set Navbar height */
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Push items to the left and right edges */
+  align-items: center; /* Center Navbar items vertically */
+  padding: 0 20px; /* Adjust padding */
+}
+
+.navbar .action-button {
+  margin-left: auto; /* Push the button to the right */
+}
+
+.navbar button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: white;
+  color: #333;
+}
+
+.sidebar {
+  position: fixed; /* Make the sidebar fixed */
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Align it to the left of the viewport */
+  background-color: black; /* Set Sidebar background color to grey */
+  color: white; /* Set Sidebar text color to white */
+  width: 200px; /* Set Sidebar width */
+  height: 100vh; /* Set Sidebar height to 100% of viewport height */
+  padding: 20px;
+}
+
+.sidebar .logo img {
+  max-height: 90px; /* Increase the size of the logo */
+  position: absolute; /* Position logo absolutely */
+  top: 20px; /* Align logo to the top */
+  left: 20px; /* Align logo to the left */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 120px; /* Increase the spacing between the sidebar menu options */
+}
+
+.sidebar li {
+  padding: 20px; /* Increase the padding around each menu option */
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  flex: 1; /* Take remaining space */
+  padding-top: 70px; /* Adjust top padding */
+  padding-left: 20px; /* Adjust left padding */
+  padding-right: 20px; /* Adjust right padding */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Align items vertically */
+}
+
+.home-content {
+  text-align: center; /* Center text */
+  margin-top: 230px; /* Push content further down */
+}
